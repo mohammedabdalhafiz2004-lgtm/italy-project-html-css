@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>إيطاليا</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@700&family=Mada:wght@400;500&family=PT+Serif:ital@1&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --ink: #1c2b39;
+    --rust: #a45a3a;
+    --bg: #f8f5ef;
+    --panel: #fffefb;
+    --muted: #7a7267;
+    --line: #ddd4bf;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    padding: 50px 20px 90px;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Mada", sans-serif;
+    font-size: 17px;
+    line-height: 1.95;
+  }
+
+  main {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-family: "Aref Ruqaa", serif;
+    font-weight: 700;
+    font-size: 2.8rem;
+    text-align: center;
+    color: var(--ink);
+    margin: 0 0 6px;
+  }
+
+  .subtitle {
+    text-align: center;
+    color: var(--rust);
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+  }
+
+  .rule {
+    width: 60px;
+    height: 2px;
+    background: var(--rust);
+    margin: 0 auto 50px;
+  }
+
+  p { margin: 0 0 26px; text-align: justify; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--panel);
+    border-top: 2px solid var(--ink);
+    border-bottom: 2px solid var(--ink);
+    margin-bottom: 24px;
+  }
+
+  th, td {
+    padding: 12px 16px;
+    text-align: right;
+    border-bottom: 1px solid var(--line);
+  }
+
+  th {
+    font-weight: 500;
+    color: var(--rust);
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+  }
+
+  tr:last-child td { border-bottom: none; }
+
+  .divider {
+    border: none;
+    border-top: 1px solid var(--line);
+    margin: 50px 0;
+  }
+
+  .gallery {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 36px 0;
+  }
+
+  .gallery figure { margin: 0; text-align: center; flex: 1 1 240px; max-width: 280px; }
+
+  .gallery img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--line);
+    background: #fff;
+    padding: 4px;
+    display: block;
+  }
+
+  .gallery figcaption {
+    margin-top: 8px;
+    font-size: 0.82rem;
+    color: var(--muted);
+  }
+
+  .source-link {
+    display: block;
+    text-align: center;
+    margin-top: 44px;
+    font-size: 0.9rem;
+  }
+
+  a {
+    color: var(--rust);
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+  }
+
+  a:hover { color: var(--ink); }
+
+  @media (max-width: 600px) {
+    h1 { font-size: 2.1rem; }
+    body { font-size: 16px; padding: 32px 14px 60px; }
+    th, td { padding: 9px 10px; font-size: 0.88rem; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>إيطاليا</h1>
+  <p class="subtitle">REPUBBLICA ITALIANA</p>
+  <div class="rule"></div>
+
+  <p>
+    إيطاليا، ورسميا الجمهورية الإيطالية، هي دولة تقع جزئيا في جنوب أوروبا في شبه الجزيرة الإيطالية وأيضا على أكبر جزيرتين في البحر الأبيض المتوسط: صقلية وسردينيا. تشترك إيطاليا في الحدود الشمالية الألبية مع فرنسا وسويسرا والنمسا وسلوفينيا. تحيط دولتا الفاتيكان وسان مارينو المستقلتان بإيطاليا. تبلغ مساحتها 301,340 كم² ويبلغ عدد سكانها أكثر من 60 مليون نسمة. عاصمتها وأكبر مدنها هي روما.
+  </p>
+
+  <table>
+    <tr><th>البيان</th><th>التفاصيل</th></tr>
+    <tr><td>العاصمة</td><td>روما</td></tr>
+    <tr><td>اللغة الرسمية</td><td>الإيطالية</td></tr>
+    <tr><td>نظام الحكم</td><td>جمهورية برلمانية</td></tr>
+    <tr><td>المساحة</td><td>301,340 كم²</td></tr>
+    <tr><td>العملة</td><td>اليورو (€)</td></tr>
+  </table>
+
+  <hr class="divider">
+
+  <div class="gallery">
+    <figure>
+      <img src="https://flagcdn.com/w640/it.png" alt="علم إيطاليا">
+      <figcaption>علم الجمهورية الإيطالية</figcaption>
+    </figure>
+    <figure>
+      <img src="https://raw.githubusercontent.com/djaiss/mapsicon/master/all/it/1024.png" alt="خريطة إيطاليا">
+      <figcaption>خريطة إيطاليا</figcaption>
+    </figure>
+  </div>
+
+  <div class="source-link">
+    <p>لمزيد من التفاصيل، يمكنك زيارة <a href="https://ar.wikipedia.org/wiki/%D8%A5%D9%8A%D8%B7%D8%A7%D9%84%D9%8A%D8%A7" target="_blank" rel="noopener noreferrer">صفحة إيطاليا على ويكيبيديا</a>.</p>
+  </div>
+
+</main>
+</body>
+</html>
